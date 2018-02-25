@@ -1,0 +1,137 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      },
+      {
+        "line": 2,
+        "value": "#Version: 1.0"
+      },
+      {
+        "line": 3,
+        "value": "#Encoding: iso-8859-1"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Realizacao do acesso inicial como pre-requisito",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 8389582039,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que estou na pagina inicial",
+            "match": {
+              "location": "PaginaInicialStep.queEstouNaPaginaInicial()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 2538349507,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "selecionar a categoria na area de busca",
+            "match": {
+              "location": "BuscarStep.selecionar_a_categoria_na_area_de_busca(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Categoria"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "Celulares e Smartphones"
+                ],
+                "line": 11
+              }
+            ],
+            "keyword": "Quando "
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "Realizar uma pesquisa no site do Mercado Livre que contenha paginacao",
+        "description": "",
+        "id": "buscar-conteudo-e-valores-mercadolivre;realizar-uma-pesquisa-no-site-do-mercado-livre-que-contenha-paginacao",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1176136061,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "realizar paginacao",
+            "match": {
+              "location": "BuscarStep.realizarPaginacao(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Pagina"
+                ],
+                "line": 25
+              },
+              {
+                "cells": [
+                  "2"
+                ],
+                "line": 26
+              }
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1060064771,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "apresenta o resultado da busca do \"1\" produto",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 35
+                }
+              ],
+              "location": "BuscarStep.apresenta_o_resultado_da_busca_do_produto(int)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 20,
+            "name": "@ID02"
+          },
+          {
+            "line": 20,
+            "name": "@PesquisaCenario"
+          }
+        ]
+      }
+    ],
+    "name": "Buscar conteudo e valores MercadoLivre",
+    "description": "",
+    "id": "buscar-conteudo-e-valores-mercadolivre",
+    "keyword": "Funcionalidade",
+    "uri": "Buscar.feature"
+  }
+]
