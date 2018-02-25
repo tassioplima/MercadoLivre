@@ -12,12 +12,11 @@ public class Print {
 
 	public void tiraPrint(WebDriver driver, String nomePrint) {
 
-		// Casting
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
 		try {
 			FileUtils.copyFile(scrFile,
-					new File("C:\\Users\\tassi\\workspace\\mercadolivre\\Evidencias", nomePrint + ".png"));
+					new File("C:\\Users\\Public\\Documents\\Evidencias", nomePrint + ".png"));
 
 		} catch (IOException e) {
 			e.printStackTrace();
